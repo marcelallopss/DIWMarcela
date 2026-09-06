@@ -1,12 +1,108 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-    <head>
-        <meta charset="UTF-8">
-        <title>Currículo - Marcela de Lima Lopes</title>
-        <link rel="stylesheet" href="style.css"> 
-    </head>
-    <body>
-        <h1>Hello World, i'm Marcela!</h1>
-        <img src="image.jpeg" alt="Foto de Perfil" class="profile-pic">
-    </body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atelier & Arte - Galeria</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Cabeçalho e menu de navegação semânticos -->
+    <header class="site-header">
+        <h1>Atelier & Arte</h1>
+        <nav class="site-nav">
+            <ul>
+                <li><a href="#home">Início</a></li>
+                <li><a href="#exposicoes">Exposições</a></li>
+                <li><a href="#artistas">Artistas</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Conteúdo principal -->
+    <main class="site-main">
+
+        <!-- Hero de abertura -->
+        <section id="home" class="hero">
+            <div class="hero-text">
+                <p class="hero-kicker">Temporada 2026</p>
+                <h2>Onde a textura da terra encontra a luz</h2>
+                <p class="hero-lede">Uma seleção íntima de obras que dialogam com tons naturais, arquitetura e silêncio — pensada para ser vista devagar.</p>
+                <a href="#exposicoes" class="hero-link">Ver exposições</a>
+            </div>
+            <div class="hero-image">
+                <img src="https://picsum.photos/id/1039/1000/1200" alt="Interior de galeria com luz natural e obra em tons terrosos">
+            </div>
+        </section>
+
+        <!-- Seção de coleções/obras -->
+        <section id="exposicoes" class="gallery-section">
+            <h2>Exposições em Destaque</h2>
+
+            <article class="art-row">
+                <div class="art-image">
+                    <img src="https://picsum.photos/id/1048/700/560" alt="Obra de arte abstrata em tons terrosos">
+                </div>
+                <div class="art-info">
+                    <span class="art-number">Sala 01</span>
+                    <h3>Sinfonia em Tons Terrosos</h3>
+                    <p>Uma composição visual que explora a harmonia entre texturas naturais e o minimalismo contemporâneo.</p>
+                </div>
+            </article>
+
+            <article class="art-row reverse">
+                <div class="art-image">
+                    <img src="https://picsum.photos/id/1069/700/560" alt="Obra de arte focada em arquitetura e luz">
+                </div>
+                <div class="art-info">
+                    <span class="art-number">Sala 02</span>
+                    <h3>Geometria da Luz</h3>
+                    <p>Estudo aprofundado sobre a incidência da luz natural em estruturas geométricas abstratas.</p>
+                </div>
+            </article>
+
+            <article class="art-row">
+                <div class="art-image">
+                    <img src="https://picsum.photos/id/1074/700/560" alt="Obra de arte em tons de azul e cinza suave">
+                </div>
+                <div class="art-info">
+                    <span class="art-number">Sala 03</span>
+                    <h3>Maré Serena</h3>
+                    <p>Uma paisagem contida, quase silenciosa, onde o azul acalma o olhar e convida à contemplação.</p>
+                </div>
+            </article>
+        </section>
+
+        <!-- Seção de contato com formulário obrigatório -->
+        <section id="contato" class="form-section">
+            <div class="form-copy">
+                <h2>Boletim de Arte</h2>
+                <p>Cadastre-se para receber convites exclusivos para vernissages e novas coleções.</p>
+            </div>
+
+            <form class="newsletter-form">
+                <div class="form-group">
+                    <label for="nome">Nome</label>
+                    <input type="text" id="nome" name="nome" placeholder="Seu nome completo" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" name="email" placeholder="seu@email.com" required>
+                </div>
+
+                <button type="submit" class="btn-submit">Inscrever-se</button>
+            </form>
+        </section>
+
+    </main>
+
+    <!-- Rodapé semântico -->
+    <footer class="site-footer">
+        <p>&copy; 2026 Atelier & Arte - Desenvolvido por Marcela Lopes. Todos os direitos reservados.</p>
+    </footer>
+
+</body>
 </html>
