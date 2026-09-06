@@ -1,0 +1,17 @@
+/* Estilos básicos para o currículo */
+body {
+    background-color: #f4f4f4;
+    font-family: Arial, sans-serif;
+    color: #333;
+    margin: 40px;
+}
+
+h1 {
+    color: #5d4037;
+}
+
+.profile-pic {
+    width: 150px;
+    border-radius: 50%;
+    margin-top: 15px;
+}
